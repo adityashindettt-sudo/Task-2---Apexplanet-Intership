@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Fundamentals - Combined Example</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+  <!-- HEADER -->
+  <header style="background-color: #e0f7fa; padding: 15px; text-align: center;">
+    <h1>Welcome to My HTML5 Demo Page</h1>
+    <p>This page demonstrates structure, forms, multimedia, and tables.</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav style="margin: 15px 0; text-align: center;">
+    <a href="#home" style="margin: 10px;">Home</a> |
+    <a href="#form" style="margin: 10px;">Form</a> |
+    <a href="#media" style="margin: 10px;">Media</a> |
+    <a href="#table" style="margin: 10px;">Table</a>
+  </nav>
+
+  <!-- SECTION: ABOUT HTML5 -->
+  <section id="home" style="background-color: #f0f8ff; padding: 15px; border-radius: 8px;">
+    <article>
+      <h2>About HTML5</h2>
+      <p>HTML5 is the latest version of HTML that introduces new elements like
+         <strong>&lt;header&gt;</strong>, <strong>&lt;nav&gt;</strong>, <strong>&lt;section&gt;</strong>,
+         <strong>&lt;article&gt;</strong>, and <strong>&lt;footer&gt;</strong>.
+         It also supports forms, multimedia (audio, video), and more structured data presentation.</p>
+    </article>
+  </section>
+
+  <hr>
+
+  <!-- SECTION: FORM -->
+  <section id="form" style="margin-top: 20px; background-color: #fff3e0; padding: 15px; border-radius: 8px;">
+    <h2>User Information Form</h2>
+    <form action="submit.php" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+
+      <label>Gender:</label><br>
+      <input type="radio" name="gender" value="male"> Male
+      <input type="radio" name="gender" value="female"> Female<br><br>
+
+      <label>Skills:</label><br>
+      <input type="checkbox" name="skill" value="HTML"> HTML
+      <input type="checkbox" name="skill" value="CSS"> CSS
+      <input type="checkbox" name="skill" value="JavaScript"> JavaScript<br><br>
+
+      <label for="city">Select City:</label><br>
+      <select id="city" name="city">
+        <option>Pune</option>
+        <option>Mumbai</option>
+        <option>Delhi</option>
+      </select><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="30" placeholder="Write something..."></textarea><br><br>
+
+      <input type="submit" value="Submit" style="background-color:#26a69a; color:white; border:none; padding:8px 16px; border-radius:5px;">
+    </form>
+  </section>
+
+  <hr>
+
+  <!-- SECTION: MULTIMEDIA -->
+  <section id="media" style="margin-top: 20px; background-color: #f1f8e9; padding: 15px; border-radius: 8px;">
+    <h2>Multimedia Examples</h2>
+
+    <h3>Audio Example:</h3>
+    <audio controls>
+      <source src="song.mp3" type="audio/mp3">
+      Your browser does not support the audio tag.
+    </audio><br><br>
+
+    <h3>Video Example:</h3>
+    <video width="400" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video><br><br>
+
+    <h3>Embedded YouTube Video (iframe):</h3>
+    <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/l19Ji_cHhFc"
+            title="YouTube video player"
+            allowfullscreen></iframe>
+  </section>
+
+  <hr>
+
+  <!-- SECTION: TABLE -->
+  <section id="table" style="margin-top: 20px; background-color: #e8eaf6; padding: 15px; border-radius: 8px;">
+    <h2>Student Table Example</h2>
+    <table border="1" width="60%" style="border-collapse: collapse; margin:auto;">
+      <thead style="background-color:#c5cae9;">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+        </tr>
+      </thead>
+
+      <tbody style="text-align:center;">
+        <tr>
+          <td>Aditya</td>
+          <td>21</td>
+          <td>Pune</td>
+        </tr>
+        <tr>
+          <td>Riya</td>
+          <td>22</td>
+          <td>Mumbai</td>
+        </tr>
+      </tbody>
+
+      <tfoot style="background-color:#c5cae9;">
+        <tr>
+          <td colspan="3">Total Students: 2</td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- FOOTER -->
+  <footer style="background-color: #c8e6c9; padding: 10px; text-align: center; border-radius: 8px;">
+    <p>© 2025 My HTML5 Demo Page | Designed by Aditya</p>
+  </footer>
+
+</body>
+</html>
